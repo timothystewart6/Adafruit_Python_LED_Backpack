@@ -4,9 +4,10 @@
 
 import time
 
-import datetime
+import Image
+import ImageDraw
 
-from Matrix8x8 import Matrix8x8
+from Adafruit_LED_Backpack import Matrix8x8
 
 
 
