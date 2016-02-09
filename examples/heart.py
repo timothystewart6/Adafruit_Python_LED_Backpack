@@ -6,11 +6,11 @@ import time
 
 import datetime
 
-from Adafruit_8x8 import EightByEight
+from Matrix8x8 import Matrix8x8
 
 
 
-grid = EightByEight(address=0x70)
+grid = Matrix8x8(address=0x70)
 
 
 
