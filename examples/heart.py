@@ -11,8 +11,14 @@ from Adafruit_LED_Backpack import Matrix8x8
 
 
 
-grid = Matrix8x8(address=0x70)
+# Create display instance on default I2C address (0x70) and bus number.
+display = Matrix8x8.Matrix8x8()
 
+# Alternatively, create a display with a specific I2C address and/or bus.
+# display = Matrix8x8.Matrix8x8(address=0x74, busnum=1)
+
+# Initialize the display. Must be called once before using the display.
+display.begin()
 
 
 heart1=[0b00000000, 0b01100110, 0b10011001, 0b10000001, 0b01000010, 0b00100100, 0b00011000, 0b00000000]
@@ -37,7 +43,7 @@ while(True):
 
         value = red
 
-      grid.setPixel(x, y, value )
+      display.setPixel(x, y, value )
 
       position = position >> 1
 
@@ -59,7 +65,7 @@ while(True):
 
         value = red
 
-      grid.setPixel(x, y, value )
+      display.setPixel(x, y, value )
 
       position = position >> 1
 
