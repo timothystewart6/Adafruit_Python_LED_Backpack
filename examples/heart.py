@@ -43,7 +43,7 @@ while(True):
 
         value = red
 
-      display.setPixel(x, y, value )
+      display.set_pixel(x, y, value )
 
       position = position >> 1
 
@@ -65,7 +65,7 @@ while(True):
 
         value = red
 
-      display.setPixel(x, y, value )
+      display.set_pixel(x, y, value )
 
       position = position >> 1
 
